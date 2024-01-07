@@ -6,8 +6,8 @@ Aplikasi website ini juga dibuat untuk memenuhi tugas UAS mata kulih Praktikum P
 
 Demo aplikasi dapat diakses melalui berikut ini tekan [di sini](https://uas-ppaw-smt-5-production.up.railway.app/). </br>
 Gunakan akun sebagai berikut untuk melakukan login: </br>
-username: admin </br>
-password: admin123 </br>
+`username: admin </br> `
+`password: admin123 </br>`
 
 Database yang digunakan pada aplikasi website ini adalah MongoDB dan diakses dengan API sendiri yang dapat dilihat [di sini](https://github.com/zuhadha/e-gmm-api)</br>
 </br>
