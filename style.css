@@ -1,0 +1,179 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border: 1px solid #87cefa;
+    border-radius: 5px;
+}
+
+#batasNgajiPage {
+    overflow: hidden; /* Hide the overflow content outside the container */
+}
+
+#ngajisTable {
+    max-height: 300px; /* Set a fixed height for the table container */
+    overflow-y: auto; /* Enable vertical scrolling for the table */
+}
+
+/* Additional style to make the table header fixed */
+#ngajisTable th {
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0;
+    z-index: 1;
+}
+
+/* Additional style to ensure buttons stay at the bottom */
+#ngajisTable td:last-child button {
+    position: relative;
+    bottom: 0;
+}
+
+
+/* search feature style */
+/* Add this to your existing CSS styles */
+/* Add this to your existing CSS styles */
+
+form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.search-button {
+    background-color: greenyellow;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    width: 40px;
+}
+
+.add-button {
+    margin-top: 20px;
+}
+
+.search-button:hover {
+    background-color: yellowgreen;
+}
+
+
+/* table styling */
+.cell-padding {
+    padding: 10px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#ngajisTable th {
+    background-color: #484848;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+#ngajisTable td {
+    border: 1px solid #434343; /* Black border for table cells */
+    
+}
+
+#ngajisTable tr:nth-child(even) {
+    background-color: #f0f0f0; /* Light grey background for even rows */
+}
+
+#ngajisTable tr:nth-child(odd) {
+    background-color: #fff; /* White background for odd rows */
+}
+
+
+/* button in table */
+/* Add this CSS to your existing stylesheet or create a new one */
+/* Update the CSS for the buttons */
+.edit-btn,
+.delete-btn {
+    width: 30px; /* Set a fixed width for the square button */
+    height: 30px; /* Set a fixed height for the square button */
+    margin-right: 5px; /* Add some margin between buttons */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #555;
+}
+
+/* Add some margin to the buttons within a table cell */
+#ngajisTable td .edit-btn,
+#ngajisTable td .delete-btn {
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #428BCA;
+}
+
+.delete-btn {
+    background-color: #D9534F;
+}

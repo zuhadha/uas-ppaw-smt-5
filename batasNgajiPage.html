@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="correct-integrity-value" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E-GMM</h1>
+    </header>
+    <main>
+        <div id="batasNgajiPage">
+            <h2>Batas Ngaji</h2>
+            <button class="search-button" onclick="searchNgajis(event)">🔍</button>
+                <label for="search">Search by Name:</label>
+                <input type="text" id="search" name="search" placeholder="Enter name...">
+            </form>
+            <!-- <button onclick="getNgajis()">Get Ngajis</button> -->
+            <div id="ngajisTable"></div>
+        </div>
+
+        <!-- Add a button to trigger the form -->
+        <div id="addNgajiButton">
+            <button class="add-button" onclick="window.location.href = 'addNgajiPage.html';" id="myButton">Add Ngaji</button>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Ngaji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E-GMM</h1>
+    </header>
+    <main>
+        <h2>Edit Ngaji</h2>
+        <div id="editNgajiForm">
+            <label for="studentsName">Student Name:</label>
+            <input type="text" id="studentsName" name="studentsName" required>
+            <label for="teachersName">Teacher Name:</label>
+            <input type="text" id="teachersName" name="teachersName" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="surahRead">Surah Read:</label>
+            <input type="text" id="surahRead" name="surahRead" required>
+            <label for="ayahRead">Ayah Read:</label>
+            <input type="number" id="ayahRead" name="ayahRead" required>
+            <label for="surahMemorize">Surah Memorize:</label>
+            <input type="text" id="surahMemorize" name="surahMemorize" required>
+            <label for="ayahMemorize">Ayah Memorize:</label>
+            <input type="number" id="ayahMemorize" name="ayahMemorize" required>
+            <button onclick="updateNgaji(ngajiId)">Update Ngaji</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        // Get the Ngaji ID from the query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const ngajiId = urlParams.get('id');
+
+        fetchNgajiById(ngajiId);
+    </script>
+</body>
+</html>
